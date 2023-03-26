@@ -24,4 +24,4 @@ def insertManyJsons(db, nameJsonFile, nameCollection):
       print("Erro ao inserir no banco de dados!")  
 
 
-#insertManyJsons(db,'./dados/prof_turmas.json','prof_classes') 
+insertManyJsons(db,'./dados/prof_turmas.json','teacherclasses') 

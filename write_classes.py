@@ -8,7 +8,7 @@ print(config['ATLAS_URI'])
 
 client = pymongo.MongoClient(config['ATLAS_URI'], server_api=ServerApi('1'))
 db = client['dataviewert1'] 
-classesCollections = db['classes']
+classesCollections = db['tclasses']
 
 
 
