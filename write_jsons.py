@@ -28,4 +28,5 @@ def insertManyJsons(db, nameJsonFile, nameCollection):
 #insertManyJsons(db,'./dados/desempenhoTurmaXassuntoXlista.json','listsubjectclasses') 
 #insertManyJsons(db,'./dados/desempenhoTurmaXlista.json','classlists') 
 #insertManyJsons(db,'./dados/desempenhoTurmaXdificuldadeXlista.json','classdifficulties') 
+#insertManyJsons(db,'./dados/users_students_2.json','students') 
 insertManyJsons(db,'./dados/users_students_2.json','students') 
