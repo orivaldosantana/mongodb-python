@@ -29,4 +29,4 @@ def insertManyJsons(db, nameJsonFile, nameCollection):
 #insertManyJsons(db,'./dados/desempenhoTurmaXlista.json','classlists') 
 #insertManyJsons(db,'./dados/desempenhoTurmaXdificuldadeXlista.json','classdifficulties') 
 #insertManyJsons(db,'./dados/users_students_2.json','students') 
-insertManyJsons(db,'./dados/coord_performace_subjetc.json','courseApprovals') 
+insertManyJsons(db,'./dados/coord_performace_subjetc.json','subjectperformances') 
