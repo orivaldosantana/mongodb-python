@@ -33,13 +33,13 @@ def insertData(db, data, nameCollection,classCode):
 
 classCode = "lop2023_1t02" 
 
-data =  pd.read_csv("./dados/lop2023_1t02/provas.csv",sep=";") 
-print( data.head() )
-insertData(db,data,'examgrades', classCode) 
+#data =  pd.read_csv("./dados/lop2023_1t02/provas.csv",sep=";") 
+#print( data.head() )
+#insertData(db,data,'examgrades', classCode) 
 
-#dataPresence =  pd.read_csv("./dados/lop2023_1t02/presenca.csv") 
-#print( dataPresence.head() )
-#insertData(db,dataPresence, 'presences', classCode) 
+dataPresence =  pd.read_csv("./dados/lop2023_1t02/presenca.csv") 
+print( dataPresence.head() )
+insertData(db,dataPresence, 'studentparticipations', classCode) 
 
 
 
