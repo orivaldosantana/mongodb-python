@@ -1,6 +1,14 @@
-# mongodb-python
+# Testes com Mongodb e Python
 
-Mongodb com Python
+Este repositório é usado para estudar o funcionamento do Mongodb com Python
+
+## Rascunho 
+
+### Listas de Exercícios 
+Cadastro do resultado dos exercícios no sistema LoP é realizado com o arquivo "write_tabular_list.py". A entrada é o csv gerando no sistema LoP com o resultado das listas de exercícios. 
+
+### Participação 
+
 
 ## Referências
 
