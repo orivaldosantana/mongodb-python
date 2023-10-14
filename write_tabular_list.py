@@ -86,7 +86,7 @@ listU3 = [13,14,15]
 # Caso já exista notas cadastradas, estas notas serão atualizadas 
 # É importante checar se as colunas do csv gerado no lop estão coerentes. 
 # Cadas lista em sua respectiva unidade 
-#showColumns("{}/listas.csv".format(classCode),listU1,listU2,listU3)
+showColumns("{}/listas.csv".format(classCode),listU1,listU2,listU3)
 replaceOneListGrades(db,dataLists, 'studentlistgrades', classCode,listU1,listU2,listU3) 
 
 
