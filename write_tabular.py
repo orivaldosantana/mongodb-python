@@ -37,7 +37,7 @@ classCode = "lop2023_2t01"
 
 dataExam =  pd.read_csv("./dados/{}/provas.csv".format(classCode)) 
 print( dataExam.head() )
-insertData(db,dataExam,'examgrades', classCode) 
+#insertData(db,dataExam,'examgrades', classCode) 
 
 dataPresence =  pd.read_csv("./dados/{}/presenca.csv".format(classCode)) 
 print( dataPresence.head() )
