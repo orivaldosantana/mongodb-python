@@ -57,7 +57,7 @@ dataStudents =  pd.read_csv("./dados/{}/alunos.csv".format(classCode))
 print( dataStudents.head() )
 # Esse código cadastra no banco de dados dataviewer (teste) os estudantes de uma turma 
 # Caso já exista estudantes da turma cadastrados, estes serão atualizadas 
-#replaceOneListGrades(db,dataStudents, 'classstudents', classCode) 
+
 replaceOneStudentClass(db,dataStudents, 'classstudents', classCode) 
 
 
