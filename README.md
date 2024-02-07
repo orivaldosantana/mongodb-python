@@ -10,6 +10,11 @@ Cadastro do resultado dos exercícios no sistema LoP é realizado com o arquivo 
 ### Participação 
 
 
+### Pacotes python necessários 
+* pandas 
+* pymongo
+* python-dotenv 
+
 ## Referências
 
 - [Explicações básicas sobre o uso do mongodb com Python](https://youtu.be/f2qyLYw_ZwY)
