@@ -8,11 +8,11 @@ config = dotenv_values(".env")
 client = pymongo.MongoClient(config['ATLAS_URI'], server_api=ServerApi('1'))
 dbDataviewer = client['dataviewert1'] 
 
- 
 
+# Função para inserir as datas de frequência de um estudante no banco de dados 
 # Formato de cada linha obtida do csv para inserir no banco de dados
 # {"regNum": "234243234", "classFreqs": [ "2021-10-10", "2021-10-11", "2021-10-12" ] }
-def replaceOneFrecStudents(db, data, nameCollection):
+def replaceOneFreqStudents(db, data, nameCollection):
     collections = db[nameCollection]
     l, c =  data.shape
     for s in range(l):
@@ -43,7 +43,7 @@ def replaceOneFrecStudents(db, data, nameCollection):
 
 classCode = "lop2023_2t01" 
 dataFrec =  pd.read_csv("./dados/{}/presenca.csv".format(classCode)) 
-replaceOneFrecStudents(dbDataviewer, dataFrec, 'studentfrequencies') 
+replaceOneFreqStudents(dbDataviewer, dataFrec, 'studentfrequencies') 
  
 print(dataFrec.columns)
 
