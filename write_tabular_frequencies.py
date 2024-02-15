@@ -12,7 +12,7 @@ dbDataviewer = client['dataviewert1']
 # Função para inserir as datas de frequência de um estudante no banco de dados 
 # Formato de cada linha obtida do csv para inserir no banco de dados
 # {"regNum": "234243234", "classFreqs": [ "2021-10-10", "2021-10-11", "2021-10-12" ] }
-def replaceOneFreqStudents(db, data, nameCollection):
+def replaceOneFreqStudents(db, data, nameCollection, classCode):
     collections = db[nameCollection]
     l, c =  data.shape
     for s in range(l):
@@ -29,6 +29,7 @@ def replaceOneFreqStudents(db, data, nameCollection):
                 freqs.append(dataColumns[i])
         #print(freqs)
         tempLine['classFreqs'] = freqs
+        tempLine['classCode'] = classCode 
         print(tempLine) 
         try: 
             print('\nGravando os dados do estudante ', tempLine['regNum']) 
@@ -43,7 +44,7 @@ def replaceOneFreqStudents(db, data, nameCollection):
 
 classCode = "lop2023_2t01" 
 dataFrec =  pd.read_csv("./dados/{}/presenca.csv".format(classCode)) 
-replaceOneFreqStudents(dbDataviewer, dataFrec, 'studentfrequencies') 
+replaceOneFreqStudents(dbDataviewer, dataFrec, 'studentfrequencies', classCode) 
  
 print(dataFrec.columns)
 
