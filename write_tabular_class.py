@@ -37,7 +37,6 @@ def replaceOneStudentClass(db, data, nameCollection,classCode):
   print(tempLinha)
   try: 
     print('\nGravando os dados de ', classCode) 
-    #result = collections.replace_one( {'class_code': classCode }, {'class_code':classCode, 'teste': '3', 'reg_students': list( regArray)}, True)   
     result = collections.replace_one( {'class_code': classCode }, tempLinha, True)   
     
     if result.modified_count == 0:

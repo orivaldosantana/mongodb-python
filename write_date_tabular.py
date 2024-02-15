@@ -14,9 +14,10 @@ def convertToUTCDate(date):
   s = date.split('/')
   return '{}-{}-{}'.format(s[2],s[1],s[0]) 
 
-
-def insertData(db, data, nameCollection,classCode):
-  #linha = {"nota1":0, "comentario1":"", "nota1":0, "comentario1":"", "nota1":0, "comentario1":"", "matricula": "X" } 
+# Insere as datas e assuntos das aulas no banco de dados 
+# Formato inserido no banco de dados
+# { "classCode": "lop2023_2t01", "classTitles": [ {"date": "2021-10-10", "classTitle": "Aula 1" }, {"date": "2021-10-11", "classTitle": "Aula 2" } ] } 
+def insertData(db, data, nameCollection,classCode):  
   collections = db[nameCollection]
 
   tempLine = {}
