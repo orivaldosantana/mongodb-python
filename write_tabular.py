@@ -33,14 +33,15 @@ def insertData(db, data, nameCollection,classCode):
       print("Erro ao inserir no banco de dados!") 
 
 #classCode = "lop2023_1t02" 
-classCode = "lop2023_2t01" 
+#classCode = "lop2023_2t01" 
+classCode = "lop2024_1t02"
 
 dataExam =  pd.read_csv("./dados/{}/provas.csv".format(classCode)) 
 print( dataExam.head() )
-#insertData(db,dataExam,'examgrades', classCode) 
+insertData(db,dataExam,'examgrades', classCode) 
 
-dataPresence =  pd.read_csv("./dados/{}/presenca.csv".format(classCode)) 
-print( dataPresence.head() )
+#dataPresence =  pd.read_csv("./dados/{}/presenca.csv".format(classCode)) 
+#print( dataPresence.head() )
 #insertData(db,dataPresence, 'studentparticipations', classCode) 
 
 
